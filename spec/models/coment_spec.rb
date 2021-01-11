@@ -1,5 +1,12 @@
 require "rails_helper"
 
 RSpec.describe Coment, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "異常" do
+    context "コメントが書かれていない場合" do
+      it "errorが出る" do
+        coment = build(:coment, body: nil)
+        expect(coment).not_to be_valid
+      end
+    end
+  end
 end

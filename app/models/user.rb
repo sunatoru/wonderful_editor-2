@@ -10,4 +10,5 @@ class User < ApplicationRecord
   has_many :article, dependent: :destroy
   has_many :article_like, dependent: :destroy
   has_many :coment, dependent: :destroy
+  validates :name, presence: true, length: { in: 7..20 }
 end
