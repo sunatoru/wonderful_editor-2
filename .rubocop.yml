@@ -18,3 +18,6 @@ Metrics/PerceivedComplexity:
   Enabled: false
   Exclude:
     - 'bin/*'
+
+RSpec/ExampleLength:
+  Enabled: false
