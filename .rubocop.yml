@@ -20,4 +20,4 @@ Metrics/PerceivedComplexity:
     - 'bin/*'
 
 RSpec/ExampleLength:
-  Enabled: false
+  Max: 11
